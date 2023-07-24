@@ -247,6 +247,6 @@ button:hover{
     margin-bottom: 15px;
   }
   .text::after {
-    left:-23px;
+    left:-13px;
   }
 }
