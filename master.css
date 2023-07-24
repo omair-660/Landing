@@ -1,0 +1,249 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: sans-serif;
+}
+.hero {
+    background-image: url("hero.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+img.logo {
+    width: 51px;
+    background: #fffefecf;
+    border-radius: 50%;
+    height: 51px;
+    margin-left: 10px;
+}
+.img-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+}
+.img-nav img{
+  width: 23px;
+  margin-right: 12px;
+}
+input[type="search"] {
+    color: white;
+    width: 114px;
+    border: 1px solid #fff;
+    background: none;
+    padding: 3px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    align-items: center;
+}
+nav .links a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  position: relative;
+}
+nav .links a::after{
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #b39ddb;
+  transition: 0.7s;
+}
+nav .links a:hover::after{
+  width: 100%;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translatey(-50%);
+}
+.text::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: -33px;
+}
+.text::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    top: 50%;
+    left: -40px;
+    border-radius: 50%;
+}
+span.top {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 18px;
+    background: #fff;
+    left: -36px;
+}
+span.down{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  bottom: 18px;
+  background: #fff;
+  left: -36px;
+}
+.text h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 62px;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+.text p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    width: 349px;
+    margin-bottom: 18px;
+}
+button {
+    border: 2px solid #eee;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    background: #00000052;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+button:hover{
+  background-color: #685a886e;
+  transform: scale(1.1);
+}
+.gallary {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+@media (min-width:1267px) {
+  .gallary .box-img img{
+    width: 189px !important;
+  }
+}
+.gallary .box-img img {
+    margin-left: 27px;
+    width: 93px;
+    height: 72%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .box-img img:hover{
+  transform: scale(1.1);
+}
+.box-img p {
+    color: white;
+    position: absolute;
+}
+.images {
+    display: flex;
+}
+.gallary h2 {
+    color: #fff;
+    font-size: 34px;
+    text-transform: capitalize;
+    padding-bottom: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.gallary h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: 8px;
+}
+.img-ho {
+    height: 100%;
+}
+.socail-img {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #fff;
+}
+.socail-img img {
+    width: 33px;
+    margin-right: 11px;
+    margin-left: 11px;
+    transition: 0.7s;
+    overflow: hidden;
+}
+.socail-img img:hover{
+  transform: scale(1.2) rotate(720deg);
+}
+@media (max-width:767px) {
+  a {
+    display: none;
+}
+.text h2{
+  font-size: 48px;
+}
+.text p {
+    font-size: 12px;
+    width: 290px;
+    max-width: 100%;
+}
+.gallary h2{
+  font-size: 29px;
+}
+.gallary .box-img img{
+  margin-left: 19px;
+  width: 82px;
+    height: 69%;
+}
+.socail-img{
+  display: flex;
+    flex-direction: column;
+    bottom: 13px;
+    left: 7%;
+}
+.socail-img img {
+    width: 26px;
+    margin-bottom: 15px;
+  }
+}
