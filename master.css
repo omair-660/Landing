@@ -217,7 +217,7 @@ button:hover{
   transform: scale(1.2) rotate(720deg);
 }
 @media (max-width:767px) {
-  a {
+ nav .links a {
     display: none;
 }
 .text h2{
@@ -245,5 +245,8 @@ button:hover{
 .socail-img img {
     width: 26px;
     margin-bottom: 15px;
+  }
+  .text::after {
+    left:-23px;
   }
 }
