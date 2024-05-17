@@ -1,4 +1,3 @@
-
 *{
   padding: 0;
   margin: 0;
@@ -11,7 +10,7 @@ body{
   font-family: sans-serif;
 }
 .hero {
-    background-image: url("hero.jpg");
+    background-image: url("hero.djpg");
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -74,9 +73,20 @@ nav .links a::after{
   background: #b39ddb;
   transition: 0.7s;
 }
+nav .links .yell::after{
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #b39ddb;
+  transition: 0.7s;
+}
 nav .links a:hover::after{
   width: 100%;
 }
+
 .text {
     position: absolute;
     top: 50%;
@@ -264,7 +274,7 @@ span.down {
   transform: scale(1.2) rotate(720deg);
 }
 @media (max-width:767px) {
-  a {
+  nav a {
     display: none;
 }
 .text h2{
@@ -282,6 +292,8 @@ span.down {
   margin-left: 19px;
   width: 82px;
     height: 69%;
+    animation: fade 0.4s ease-in-out;
+    transition: 0.5s;
 }
 .socail-img{
   display: flex;
@@ -331,4 +343,21 @@ span.top {
 input[type="search"]:hover::placeholder{
   font-size: 5px;
   color: #ccc;
+}
+.herooo{
+  position: absolute;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: -1;
+animation: fade 0.4s ease-in-out;
+transition: 0.5s;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
